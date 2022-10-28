@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="imge/x-icon" href="img/channels4_profile.jpg">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="img/arsany1.png" id="logo" />
+        <ul>
+          <li><a href="index2.html">cv</a></li>
+          <li><a href="https://www.youtube.com/channel/UC8pXC1B3IVjooBlotjOQZMA"><i class=fas fa-link></i>My chanel</a></l>
+        </ul>
+        <img src="img/moon.png" id="icon" />
+      </nav>
+    </header>
+
+    
+  </body><script>
+    const icon = document.getElementById("icon");
+    icon.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        icon.src = "img/sun.png";
+      } else {
+        icon.src = "img/moon.png";
+      }
+    });
+  </script>
+</html>
